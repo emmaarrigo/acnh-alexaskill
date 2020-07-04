@@ -1,0 +1,354 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "villager quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "cancel quiz",
+                        "end quiz"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "V_names"
+                        },
+                        {
+                            "name": "personality",
+                            "type": "personality"
+                        },
+                        {
+                            "name": "species",
+                            "type": "species"
+                        },
+                        {
+                            "name": "villagername",
+                            "type": "V_names"
+                        },
+                        {
+                            "name": "birthdayday",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "birthdaymonth",
+                            "type": "AMAZON.Month"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about {villagername}",
+                        "{birthdaymonth} {birthdayday}",
+                        "{birthdayday} {birthdaymonth}",
+                        "{villagername}",
+                        "{species}",
+                        "{personality}",
+                        "{name}"
+                    ]
+                },
+                {
+                    "name": "QuizIntent",
+                    "slots": [],
+                    "samples": [
+                        "start a quiz",
+                        "start a quiz game",
+                        "and start a quiz",
+                        "and quiz me",
+                        "for a quiz",
+                        "a quiz"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "V_names",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Anchovy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Annalisa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Papi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chester"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cousteau"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Samson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pancetti"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dobie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eugene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Becky"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Elvis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pheobe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Biff"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Claudia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Freckles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lucky"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stella"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alfonso"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marshall"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "personality",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lazy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smug"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snotty"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peppy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "normal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cranky"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "big sister"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "species",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "wolf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "horse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bird"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anteater"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cub"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mouse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "koala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ostrich"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alligator"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "duck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hamster"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hippo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rabbit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pig"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "squirel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sheep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
